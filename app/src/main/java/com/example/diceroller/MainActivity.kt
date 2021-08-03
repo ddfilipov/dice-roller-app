@@ -22,6 +22,5 @@ class MainActivity : AppCompatActivity() {
         val diceRoll = dice.roll()
         val resultTextView: TextView = findViewById(R.id.textView)
         resultTextView.text = diceRoll.toString()
-
     }
 }
