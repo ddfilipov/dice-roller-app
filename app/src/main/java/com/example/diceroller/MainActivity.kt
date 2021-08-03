@@ -12,13 +12,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val rollButton: Button = findViewById(R.id.button)
-        rollButton.setOnClickListener{
-            //val toast = Toast.makeText(this, "Dice Rolled!", Toast.LENGTH_SHORT).show()
+        rollButton.setOnClickListener {
             rollDice()
         }
     }
 
-    private fun rollDice(){
+    private fun rollDice() {
         val dice = Dice(6)
         val diceRoll = dice.roll()
         val resultTextView: TextView = findViewById(R.id.textView)
